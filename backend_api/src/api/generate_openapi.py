@@ -1,7 +1,8 @@
 import json
 import os
 
-from src.api.main import app
+# Importing app triggers model and route registration
+from src.api.main import app  # noqa: F401
 
 # Get the OpenAPI schema
 openapi_schema = app.openapi()
